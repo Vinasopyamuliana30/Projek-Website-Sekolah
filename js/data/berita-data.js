@@ -55,7 +55,7 @@ const allBerita = [
     id: "berita-5",
     kategori: "kegiatan",
     judul: "Siswa MTsN 2 Sumbawa Rutin Laksanakan Sholat Dhuha Bersama",
-    gambar: "../assets/Kegiatan1.png",
+    gambar: "../assets/kegiatan1.png",
     tanggal: "3 September 2025",
     ringkasan: "Peserta didik MTsN 2 Sumbawa melaksanakan kegiatan Sholat Dhuha bersama.",
     konten: `
@@ -67,7 +67,7 @@ const allBerita = [
     id: "berita-6",
     kategori: "kegiatan",
     judul: "Siswa MTsN 2 Sumbawa Antusias Ikuti Latihan PMR",
-    gambar: "../assets/Kegiatan2.png",
+    gambar: "../assets/kegiatan2.png",
     tanggal: "12 Agustus 2025",
     ringkasan: "Peserta didik MTsN 2 Sumbawa mengikuti kegiatan latihan Palang Merah Remaja (PMR).",
     konten: `
