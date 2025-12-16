@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guru - MTs Negeri 2 Sumbawa</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/pages/guru.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <img src="../assets/logo.png" alt="logo" />
+      <div class="logotext">
+        <h4>MADRASAH TSANAWIYAH</h4>
+        <h3>NEGERI 2</h3>
+        <h5>SUMBAWA</h5>
+      </div>
+    </div>
+    <button id="hamburger" class="hamburger">☰</button>
+  </header>
+
+  <!-- DRAWER MENU -->
+  <nav id="drawermenu" class="drawer">
+    <a href="../index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="berita.html">Berita</a>
+    <a href="prestasi.html">Prestasi</a>
+    <a href="guru.html">Guru</a>
+    <a href="ppdb.html">PPDB</a>
+    <a href="kegiatan.html">Kegiatan Siswa</a>
+  </nav>
+
+  <!-- GURU SECTION -->
+  <section class="guru-section">
+    <div class="guru-hero-header" style="background-image: url('../assets/semua_guru.png')">
+      <div class="guru-hero-overlay">
+        <h2 class="guru-page-title">DAFTAR GURU<br><span class="subtitle">MTsN 2 SUMBAWA</span></h2>
+      </div>
+    </div>
+
+    <div class="guru-tagline-wrapper">
+      <button class="guru-tagline-btn">
+        "Tenaga Pendidikan Kami"
+      </button>
+      <p class="guru-tagline-desc">Guru-guru berpengalaman dan berdedikasi tinggi untuk pendidikan terbaik</p>
+    </div>
+
+    <div class="guru-stats-wrapper">
+      <div class="guru-stat-card">
+        <h3 class="stat-number">45</h3>
+        <p class="stat-label">Total Guru</p>
+      </div>
+      <div class="guru-stat-card">
+        <h3 class="stat-number">15</h3>
+        <p class="stat-label">Mata Pelajaran</p>
+      </div>
+    </div>
+
+    <div class="guru-list-wrapper"></div>
+
+ <!-- FOOTER -->
+<footer class="footer" id="kontak">
+  <h3>Kontak</h3>
+  <p>📞 +62-857-579-9795</p>
+  <p>📞 +62-823-400-2017</p>
+  <p>📧 info@mtsnegeri2sumbawa.sch.id</p>
+
+  <h3>Sosial Media</h3>
+  <div class="sosmed">
+    <a href="https://www.facebook.com/profile.php?id=100089073197500" target="_blank">
+      <img src="../assets/fecbook.png" alt="Facebook" width="32" height="32">
+    </a>
+    <a href="https://www.instagram.com/mtsn2sumbawa?igsh=OWRrcXo4d2UyZHdr" target="_blank">
+      <img src="../assets/instagram.png" alt="Instagram" width="32" height="32">
+    </a>
+    <a href="https://youtube.com/@mtsn2sumbawa?si=h_3PBO0O-FVTzgFH" target="_blank">
+      <img src="../assets/youtobe.png" alt="YouTube" width="32" height="32">
+    </a>
+  </div>
+</footer>
+
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15772.94441555492!2d117.98408319508698!3d-8.763843110595117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dca55f3118356c7%3A0x9900fb1fe49b0749!2sMTs%20Negeri%202%20Sumbawa!5e0!3m2!1sen!2id!4v1764721766556!5m2!1sen!2id"
+      width="100%"
+      height="200"
+      style="border: 0"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </footer>
+
+  <!-- COPYRIGHT -->
+  <footer class="footer-bottom">
+    <button class="footer-btn">
+      Copyright © MTS Negeri 2 Sumbawa | dikelola oleh Tim Humas
+    </button>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    // ===== DATA GURU =====
+    const dataGuru = [
+      {
+        id: "guru-1",
+        nama: "Ibrahim",
+        mapel: "Bahasa Indonesia",
+        foto: "../assets/guru2.png"
+      },
+      {
+        id: "guru-2",
+        nama: "Sudarmin",
+        mapel: "Ilmu Pengetahuan Sosial",
+        foto: "../assets/guru9.png"
+      },
+      {
+        id: "guru-3",
+        nama: "Karyawati",
+        mapel: "Bahasa Indonesia",
+        foto: "../assets/guru10.png"
+      },
+      {
+        id: "guru-4",
+        nama: "Emi Suhaemi",
+        mapel: "Seni Budaya & Keterampilan",
+        foto: "../assets/guru5.png"
+      },
+      {
+        id: "guru-5",
+        nama: "Renny Wahyuningsih",
+        mapel: "Teknologi Informasi dan Komunikasi",
+        foto: "../assets/guru1.png"
+      },
+      {
+        id: "guru-6",
+        nama: "Edi Alwi",
+        mapel: "Ilmu Pengetahuan Alam",
+        foto: "../assets/guru12.png"
+      },
+      {
+        id: "guru-7",
+        nama: "Isra",
+        mapel: "Fiqih",
+        foto: "../assets/guru13.png"
+      },
+       {
+        id: "guru-8",
+        nama: "Ruslan",
+        mapel: "Ilmu Pengetahuan Sosial",
+        foto: "../assets/guru8.png"
+      },
+       {
+        id: "guru-9",
+        nama: "Neti Susanti",
+        mapel: "Ilmu Pengetahuan Alam",
+        foto: "../assets/guru14.png"
+      },
+       {
+        id: "guru-10",
+        nama: "Yoga Utama",
+        mapel: "Pendidikan Jasmani",
+        foto: "../assets/guru15.png"
+      },
+       {
+        id: "guru-11",
+        nama: "Nasarudin",
+        mapel: "Bahasa Arab",
+        foto: "../assets/guru16.png"
+      },
+       {
+        id: "guru-12",
+        nama: "Herni Yuliana",
+        mapel: "Ilmu Pengetahuan Alam",
+        foto: "../assets/guru17.png"
+      },
+        {
+        id: "guru-13",
+        nama: "Juniarti",
+        mapel: "Matematika",
+        foto: "../assets/guru18.png"
+      }
+    ];
+
+    // ===== RENDER LIST GURU =====
+    function renderGuruList() {
+      const container = document.querySelector(".guru-list-wrapper");
+      container.innerHTML = "";
+
+      dataGuru.forEach(guru => {
+        const card = document.createElement("div");
+        card.className = "guru-card";
+        card.innerHTML = `
+          <div class="guru-card-inner">
+            <div class="guru-photo-wrapper">
+              <img src="${guru.foto}" alt="${guru.nama}" class="guru-photo">
+            </div>
+            <div class="guru-info">
+              <h3 class="guru-name">${guru.nama}</h3>
+              <p class="guru-mapel">${guru.mapel}</p>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    // Initial render
+    renderGuruList();
+  </script>
+</body>
+</html>

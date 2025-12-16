@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kegiatan Siswa - MTs Negeri 2 Sumbawa</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/pages/kegiatan.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="logo">
+        <img src="../assets/logo.png" alt="logo" />
+        <div class="logotext">
+          <h4>MADRASAH TSANAWIYAH</h4>
+          <h3>NEGERI 2</h3>
+          <h5>SUMBAWA</h5>
+        </div>
+      </div>
+      <button id="hamburger" class="hamburger">☰</button>
+    </header>
+
+    <!-- DRAWER MENU -->
+    <nav id="drawermenu" class="drawer">
+      <a href="../index.html">Beranda</a>
+      <a href="profil.html">Profil</a>
+      <a href="berita.html">Berita</a>
+      <a href="prestasi.html">Prestasi</a>
+      <a href="guru.html">Guru</a>
+      <a href="ppdb.html">PPDB</a>
+      <a href="kegiatan.html">Kegiatan Siswa</a>
+    </nav>
+
+    <!-- KEGIATAN SISWA SECTION -->
+    <section class="kegiatan-siswa-section">
+      <div
+        class="kegiatan-hero-header"
+        style="background-image: url('../assets/siswa.png')"
+      >
+        <div class="kegiatan-hero-overlay">
+          <h2 class="kegiatan-page-title">
+            KEGIATAN SISWA<br /><span class="subtitle">MTsN 2 SUMBAWA</span>
+          </h2>
+        </div>
+      </div>
+
+      <div class="kegiatan-tagline-wrapper">
+        <button class="kegiatan-tagline-btn">
+          "Mendidik dengan Aksi, Menginspirasi Lewat Prestasi"
+        </button>
+      </div>
+
+      <div class="kegiatan-tabs">
+        <button class="kegiatan-tab active" data-kategori="semua">Semua</button>
+        <button class="kegiatan-tab" data-kategori="ekstrakulikuler">
+          Ekstrakurikuler
+        </button>
+        <button class="kegiatan-tab" data-kategori="keagamaan">
+          Keagamaan
+        </button>
+        <button class="kegiatan-tab" data-kategori="kesenian">Kesenian</button>
+        <button class="kegiatan-tab" data-kategori="sosial">
+          Sosial & Lingkungan
+        </button>
+      </div>
+
+      <div class="kegiatan-gallery-wrapper"></div>
+    </section>
+
+   <!-- FOOTER -->
+<footer class="footer" id="kontak">
+  <h3>Kontak</h3>
+  <p>📞 +62-857-579-9795</p>
+  <p>📞 +62-823-400-2017</p>
+  <p>📧 info@mtsnegeri2sumbawa.sch.id</p>
+
+  <h3>Sosial Media</h3>
+  <div class="sosmed">
+    <a href="https://www.facebook.com/profile.php?id=100089073197500" target="_blank">
+      <img src="../assets/fecbook.png" alt="Facebook" width="32" height="32">
+    </a>
+    <a href="https://www.instagram.com/mtsn2sumbawa?igsh=OWRrcXo4d2UyZHdr" target="_blank">
+      <img src="../assets/instagram.png" alt="Instagram" width="32" height="32">
+    </a>
+    <a href="https://youtube.com/@mtsn2sumbawa?si=h_3PBO0O-FVTzgFH" target="_blank">
+      <img src="../assets/youtobe.png" alt="YouTube" width="32" height="32">
+    </a>
+  </div>
+</footer>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15772.94441555492!2d117.98408319508698!3d-8.763843110595117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dca55f3118356c7%3A0x9900fb1fe49b0749!2sMTs%20Negeri%202%20Sumbawa!5e0!3m2!1sen!2id!4v1764721766556!5m2!1sen!2id"
+        width="100%"
+        height="200"
+        style="border: 0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </footer>
+
+    <!-- COPYRIGHT -->
+    <footer class="footer-bottom">
+      <button class="footer-btn">
+        Copyright © MTS Negeri 2 Sumbawa | dikelola oleh Tim Humas
+      </button>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+      // ===== DATA GALERI KEGIATAN SISWA =====
+      const dataKegiatanSiswaGallery = [
+        {
+          id: "galeri-1",
+          kategori: "ekstrakulikuler",
+          judul: "DrumBand",
+          gambar: "../assets/eks1.png",
+          deskripsi:
+            "Irama semangat terus bergema! drum band MTsN 2 Sumbawa mengiringi upacara bendera dengan penuh energi dan kekompakan",
+        },
+        {
+          id: "galeri-2",
+          kategori: "keagamaan",
+          judul: "Sholat Jamaah",
+          gambar: "../assets/agama1.png",
+          deskripsi:
+            "Menumbuhkan kebersamaan dan ketakwaan melalui kegiatan shalat berjamaah di MTsN 2 Sumbawa.",
+        },
+        {
+          id: "galeri-3",
+          kategori: "kesenian",
+          judul: "Lomba Seni",
+          gambar: "../assets/seni1.png",
+          deskripsi:
+            "Siswa menyalurkan bakat seni melalui berbagai lomba kesenian di lingkungan madrasah.",
+        },
+        {
+          id: "galeri-4",
+          kategori: "sosial",
+          judul: "Donasi Banjir",
+          gambar: "../assets/beritahome2.png",
+          deskripsi:
+            "Kegiatan penggalangan dan penyaluran donasi untuk korban bencana banjir.",
+        },
+        {
+          id: "galeri-5",
+          kategori: "ekstrakulikuler",
+          judul: "PMR",
+          gambar: "../assets/Kegiatan2.png",
+          deskripsi:
+            "Latihan rutin PMR MTsN 2 Sumbawa membentuk jiwa peduli, tanggap, dan siap menolong sesama.",
+        },
+        {
+          id: "galeri-6",
+          kategori: "ekstrakulikuler",
+          judul: "Pramuka",
+          gambar: "../assets/eks2.png",
+          deskripsi:
+            "Siswa MTsN 2 Sumbawa mengikuti upacara peringatan Hari Pramuka untuk menumbuhkan semangat kedisiplinan.",
+        },
+        {
+          id: "galeri-7",
+          kategori: "ekstrakulikuler",
+          judul: "Paskibra",
+          gambar: "../assets/eks3.png",
+          deskripsi:
+            "Tiga anggota Paskibra MTsN 2 Sumbawa dipercaya sebagai pembawa bendera pada kegiatan upacara hari senin.",
+        },
+        {
+          id: "galeri-8",
+          kategori: "keagamaan",
+          judul: "Isra Mi'raj",
+          gambar: "../assets/agama2.png",
+          deskripsi:
+            "Memperingati Isra Mi'raj sebagai momentum meningkatkan keimanan dan keteladanan Rasulullah SAW.",
+        },
+        {
+          id: "galeri-9",
+          kategori: "kesenian",
+          judul: "Sakeco",
+          gambar: "../assets/seni2.png",
+          deskripsi:
+            "Penampilan Sakeco dari siswa MTsN 2 Sumbawa melestarikan seni dan budaya daerah Sumbawa.",
+        },
+        {
+          id: "galeri-10",
+          kategori: "kesenian",
+          judul: "Senam Kreasi",
+          gambar: "../assets/seni3.png",
+          deskripsi:
+            "Gerak kompak, semangat terpancar! Siswa MTsN 2 Sumbawa tampil energik dalam senam kreasi.",
+        },
+        {
+          id: "galeri-11",
+          kategori: "keagamaan",
+          judul: "Kultum",
+          gambar: "../assets/agama3.png",
+          deskripsi:
+            "Siswa MTsN 2 Sumbawa melaksanakan kultum Ramadan di masjid sebagai bagian dari pembinaan iman dan takwa.",
+        },
+        {
+          id: "galeri-12",
+          kategori: "keagamaan",
+          judul: "Maulid Nabi",
+          gambar: "../assets/agama4.png",
+          deskripsi:
+            "Peringatan Maulid Nabi Muhammad SAW di MTsN 2 Sumbawa berlangsung khidmat dan penuh makna.",
+        },
+        {
+          id: "galeri-13",
+          kategori: "sosial",
+          judul: "Sosial",
+          gambar: "../assets/kegiatan4.png",
+          deskripsi:
+            "Kegiatan penggalangan dana dilakukan sebagai wujud solidaritas terhadap sesama yang membutuhkan. Melalui kegiatan ini, siswa belajar menumbuhkan empati dan rasa tanggung jawab sosial.",
+        },
+        {
+          id: "galeri-14",
+          kategori: "sosial",
+          judul: "Lingkungan",
+          gambar: "../assets/kegiatan5.png",
+          deskripsi:
+            "Siswa dan guru MTsN 2 Sumbawa melaksanakan kegiatan penanaman pohon di lingkungan madrasah. Kegiatan ini bertujuan menumbuhkan kesadaran akan pentingnya menjaga kelestarian alam.",
+        },
+        {
+          id: "galeri-15",
+          kategori: "sosial",
+          judul: "Sosial",
+          gambar: "../assets/kegiatan6.png",
+          deskripsi:
+            "MTsN 2 Sumbawa menerima kunjungan kerja dari perwakilan Kabupaten Sumbawa. Kegiatan ini menjadi ajang silaturahmi sekaligus pembinaan untuk meningkatkan mutu pendidikan madrasah.",
+        },
+      ];
+
+      // ===== RENDER GALERI KEGIATAN =====
+      function renderKegiatanSiswaGallery(filter = "semua") {
+        const container = document.querySelector(".kegiatan-gallery-wrapper");
+        container.innerHTML = "";
+
+        const list =
+          filter === "semua"
+            ? dataKegiatanSiswaGallery
+            : dataKegiatanSiswaGallery.filter(
+                (item) => item.kategori === filter
+              );
+
+        list.forEach((item) => {
+          const card = document.createElement("div");
+          card.className = "kegiatan-siswa-card";
+
+          card.innerHTML = `
+          <div class="kegiatan-siswa-label">
+            <span>${item.judul}</span>
+          </div>
+          <div class="kegiatan-siswa-inner">
+            <div class="kegiatan-siswa-image-wrapper">
+              <img src="${item.gambar}" alt="${item.judul}">
+            </div>
+            <p class="kegiatan-siswa-desc">
+              ${item.deskripsi || ""}
+            </p>
+          </div>
+        `;
+
+          container.appendChild(card);
+        });
+      }
+
+      // ===== EVENT TAB CLICK =====
+      document.querySelectorAll(".kegiatan-tab").forEach((tab) => {
+        tab.addEventListener("click", (e) => {
+          document
+            .querySelectorAll(".kegiatan-tab")
+            .forEach((t) => t.classList.remove("active"));
+          e.target.classList.add("active");
+          const kategori = e.target.getAttribute("data-kategori");
+          renderKegiatanSiswaGallery(kategori);
+        });
+      });
+
+      // Initial render
+      renderKegiatanSiswaGallery("semua");
+    </script>
+  </body>
+</html>

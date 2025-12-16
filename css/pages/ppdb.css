@@ -1,0 +1,331 @@
+/* ===== HALAMAN PPDB ===== */
+.ppdb-section {
+  padding-top: 100px;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Hero Header PPDB */
+.ppdb-hero-header {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -30px;
+}
+
+.ppdb-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.ppdb-page-title {
+  font-size: 20px;
+  font-size: "poppin";
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.4;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+/* Jalur Pendaftaran Cards */
+.ppdb-jalur-section {
+  padding: 20px 16px;
+}
+
+.ppdb-jalur-title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #066d68;
+  margin-bottom: 20px;
+}
+
+.ppdb-jalur-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.ppdb-jalur-card {
+  background: #0174786a;
+  border-radius: 16px;
+  padding: 20px 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.ppdb-jalur-card:hover {
+  transform: translateY(-5px);
+}
+
+.ppdb-jalur-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 12px;
+  background: #066d68;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.ppdb-jalur-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #017478;
+  margin-bottom: 8px;
+}
+
+.ppdb-jalur-desc {
+  font-size: 11px;
+  color: #ffffff;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.ppdb-jalur-btn {
+  background: #ffffff;
+  color: #066d68;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ppdb-jalur-btn:hover {
+  background: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* Cara Pendaftaran Section */
+.ppdb-cara-section {
+  background: #1cafb4;
+  padding: 30px 20px;
+  color: white;
+  text-align: center;
+}
+
+.ppdb-cara-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.ppdb-cara-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* Slider Steps */
+.ppdb-steps-slider {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.ppdb-steps-container {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.ppdb-step-card {
+  min-width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.ppdb-step-illustration {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+}
+
+.ppdb-step-number {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.ppdb-step-desc {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.ppdb-step-desc a {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+/* Dots Navigation */
+.ppdb-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.ppdb-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ppdb-dot.active {
+  background: #ffffff;
+  width: 24px;
+  border-radius: 5px;
+}
+
+/* Dokumen Section */
+.ppdb-dokumen-section {
+  background: #f5f5f5;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.ppdb-dokumen-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #017478;
+  margin-bottom: 20px;
+}
+
+.ppdb-dokumen-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.ppdb-dokumen-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #ffffff;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.ppdb-dokumen-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.ppdb-dokumen-name {
+  font-size: 13px;
+  color: #333;
+  flex: 1;
+}
+
+/* Kontak Section */
+.ppdb-kontak-section {
+  background: white;
+  padding: 30px 20px;
+  color: #017478;
+  & h3 {
+    color: #fd7e14;
+  }
+}
+
+.ppdb-kontak-title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.ppdb-kontak-subtitle {
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.ppdb-kontak-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ppdb-kontak-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.ppdb-kontak-avatar {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 12px;
+  background: #017478;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.ppdb-kontak-name {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #017478;
+}
+
+.ppdb-kontak-phone {
+  font-size: 12px;
+  margin-bottom: 12px;
+  color: black;
+}
+
+.ppdb-wa-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #25d366;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.ppdb-wa-btn:hover {
+  background: #20ba5a;
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PPDB - MTs Negeri 2 Sumbawa</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/pages/ppdb.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="logo">
+        <img src="../assets/logo.png" alt="logo" />
+        <div class="logotext">
+          <h4>MADRASAH TSANAWIYAH</h4>
+          <h3>NEGERI 2</h3>
+          <h5>SUMBAWA</h5>
+        </div>
+      </div>
+      <button id="hamburger" class="hamburger">☰</button>
+    </header>
+
+    <!-- DRAWER MENU -->
+    <nav id="drawermenu" class="drawer">
+      <a href="../index.html">Beranda</a>
+      <a href="profil.html">Profil</a>
+      <a href="berita.html">Berita</a>
+      <a href="prestasi.html">Prestasi</a>
+      <a href="guru.html">Guru</a>
+      <a href="ppdb.html">PPDB</a>
+      <a href="kegiatan.html">Kegiatan Siswa</a>
+    </nav>
+
+    <!-- PPDB SECTION -->
+    <section class="ppdb-section">
+      <div
+        class="ppdb-hero-header"
+        style="background-image: url('../assets/gedung.png')"
+      >
+        <div class="ppdb-hero-overlay">
+          <h2 class="ppdb-page-title">
+            Selamat Datang di PPDB<br />MTsN 2 Sumbawa
+          </h2>
+        </div>
+      </div>
+
+      <div class="ppdb-jalur-section">
+        <h3 class="ppdb-jalur-title">Jalur Pendaftaran MTsN 2<br />SUMBAWA</h3>
+
+        <div class="ppdb-jalur-cards">
+          <div class="ppdb-jalur-card">
+            <div class="ppdb-jalur-icon">🏆</div>
+            <h4 class="ppdb-jalur-name">Jalur Prestasi MTsN 2<br />SUMBAWA</h4>
+            <p class="ppdb-jalur-desc">Jalur khusus bagi siswa berprestasi</p>
+            <button class="ppdb-jalur-btn">Ditutup</button>
+          </div>
+
+          <div class="ppdb-jalur-card">
+            <div class="ppdb-jalur-icon">🎓</div>
+            <h4 class="ppdb-jalur-name">Jalur Reguler MTsN 2<br />SUMBAWA</h4>
+            <p class="ppdb-jalur-desc">Jalur umum pendaftaran siswa baru</p>
+            <button class="ppdb-jalur-btn">Ditutup</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="ppdb-cara-section">
+        <h3 class="ppdb-cara-title">Cara Pendaftaran</h3>
+        <p class="ppdb-cara-subtitle">Bagaimana Cara Daftar</p>
+
+        <div class="ppdb-steps-slider">
+          <div class="ppdb-steps-container">
+            <div class="ppdb-step-card">
+              <div class="ppdb-step-illustration">💻</div>
+              <h4 class="ppdb-step-number">Langkah 1</h4>
+              <p class="ppdb-step-desc">
+                Baca Persyaratan <br />
+                Cek semua syarat pendaftaran yang tertera di bawah sebelum mulai
+                mendaftar. <br />
+              </p>
+            </div>
+
+            <div class="ppdb-step-card">
+              <div class="ppdb-step-illustration">📝</div>
+              <h4 class="ppdb-step-number">Langkah 2</h4>
+              <p class="ppdb-step-desc">
+                Isi Formulir Pendaftaran <br />
+                Lengkapi data diri dan unggah dokumen (rapor, KK, akta, pas
+                foto). <br />
+              </p>
+            </div>
+
+            <div class="ppdb-step-card">
+              <div class="ppdb-step-illustration">📄</div>
+              <h4 class="ppdb-step-number">Langkah 3</h4>
+              <p class="ppdb-step-desc">
+                Cek Jadwal Seleksi<br />
+                Pantau tanggal seleksi administrasi & tes.
+              </p>
+            </div>
+
+            <div class="ppdb-step-card">
+              <div class="ppdb-step-illustration">✅</div>
+              <h4 class="ppdb-step-number">Langkah 4</h4>
+              <p class="ppdb-step-desc">
+                Lihat Hasil dan Cetak Bukti Pendaftaran Unduh brosur atau bukti
+                pendaftaran PDF.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ppdb-dots">
+          <button class="ppdb-dot active" data-step="0"></button>
+          <button class="ppdb-dot" data-step="1"></button>
+          <button class="ppdb-dot" data-step="2"></button>
+          <button class="ppdb-dot" data-step="3"></button>
+        </div>
+      </div>
+
+      <div class="ppdb-dokumen-section">
+        <h3 class="ppdb-dokumen-title">Dokumen Penting</h3>
+        <div class="ppdb-dokumen-list">
+          <div class="ppdb-dokumen-item">
+            <span class="ppdb-dokumen-icon">📋</span>
+            <a
+              href="assets/BROSUR PPDBM 2025.pdf"
+              download="Brosur PPDB 2025.pdf"
+              class="ppdb-dokumen-name"
+              >Brosur PPDB 2025 (PDF)</a
+            >
+          </div>
+          <div class="ppdb-dokumen-item">
+            <span class="ppdb-dokumen-icon">📝</span>
+            <a
+              href="path/ke/formulir-pendaftaran-manual.pdf"
+              download="Formulir Pendaftaran Manual.pdf"
+              class="ppdb-dokumen-name"
+              >Formulir Pendaftaran Manual (PDF)</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ppdb-kontak-section">
+      <h3 class="ppdb-kontak-title">Masih Kurang Info?</h3>
+      <p class="ppdb-kontak-subtitle">
+        Silahkan Hubungi Kontak di<br />bawah Ini:
+      </p>
+
+      <div class="ppdb-kontak-list">
+        <div class="ppdb-kontak-card">
+          <div class="ppdb-kontak-avatar">👤</div>
+          <h4 class="ppdb-kontak-name">Humas</h4>
+          <p class="ppdb-kontak-phone">+62 823-9356-1870</p>
+          <a
+            href="https://wa.me/6282393561870"
+            class="ppdb-wa-btn"
+            target="_blank"
+          >
+            <span>💬</span> WhatsApp
+          </a>
+        </div>
+
+        <div class="ppdb-kontak-card">
+          <div class="ppdb-kontak-avatar">👤</div>
+          <h4 class="ppdb-kontak-name">Kurikulum</h4>
+          <p class="ppdb-kontak-phone">+62 823-9356-1870</p>
+          <a
+            href="https://wa.me/6282393561870"
+            class="ppdb-wa-btn"
+            target="_blank"
+          >
+            <span>💬</span> WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+ <!-- FOOTER -->
+<footer class="footer" id="kontak">
+  <h3>Kontak</h3>
+  <p>📞 +62-857-579-9795</p>
+  <p>📞 +62-823-400-2017</p>
+  <p>📧 info@mtsnegeri2sumbawa.sch.id</p>
+
+  <h3>Sosial Media</h3>
+  <div class="sosmed">
+    <a href="https://www.facebook.com/profile.php?id=100089073197500" target="_blank">
+      <img src="../assets/fecbook.png" alt="Facebook" width="32" height="32">
+    </a>
+    <a href="https://www.instagram.com/mtsn2sumbawa?igsh=OWRrcXo4d2UyZHdr" target="_blank">
+      <img src="../assets/instagram.png" alt="Instagram" width="32" height="32">
+    </a>
+    <a href="https://youtube.com/@mtsn2sumbawa?si=h_3PBO0O-FVTzgFH" target="_blank">
+      <img src="../assets/youtobe.png" alt="YouTube" width="32" height="32">
+    </a>
+  </div>
+</footer>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15772.94441555492!2d117.98408319508698!3d-8.763843110595117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dca55f3118356c7%3A0x9900fb1fe49b0749!2sMTs%20Negeri%202%20Sumbawa!5e0!3m2!1sen!2id!4v1764721766556!5m2!1sen!2id"
+        width="100%"
+        height="200"
+        style="border: 0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </footer>
+
+    <!-- COPYRIGHT -->
+    <footer class="footer-bottom">
+      <button class="footer-btn">
+        Copyright © MTS Negeri 2 Sumbawa | dikelola oleh Tim Humas
+      </button>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+      // PPDB Steps Slider
+      let currentStep = 0;
+      const stepsContainer = document.querySelector(".ppdb-steps-container");
+      const ppdbDots = document.querySelectorAll(".ppdb-dot");
+
+      function updateStepsSlider() {
+        stepsContainer.style.transform = `translateX(-${currentStep * 100}%)`;
+
+        ppdbDots.forEach((dot, index) => {
+          dot.classList.toggle("active", index === currentStep);
+        });
+      }
+
+      ppdbDots.forEach((dot) => {
+        dot.addEventListener("click", (e) => {
+          currentStep = parseInt(e.target.getAttribute("data-step"));
+          updateStepsSlider();
+        });
+      });
+
+      // Auto slide
+      setInterval(() => {
+        currentStep = (currentStep + 1) % 4;
+        updateStepsSlider();
+      }, 5000);
+    </script>
+  </body>
+</html>

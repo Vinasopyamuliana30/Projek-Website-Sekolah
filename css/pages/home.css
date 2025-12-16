@@ -1,0 +1,206 @@
+/* ===== HERO SECTION ===== */
+.hero {
+  display: block;
+  min-height: 670px;
+  height: 670px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: -2px;
+  width: 100%;
+}
+
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  padding-top: 150px;
+  text-align: center;
+  transform: translateY(-150px);
+}
+
+.hero-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  text-align-last: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  max-width: 90%;
+  transform: translateY(-150px);
+}
+
+.hero .btn-primary {
+  display: inline-block;
+  margin-top: 90px;
+  padding: 12px 26px;
+  background: #066d68;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  border: 2px solid #ffffff55;
+  transform: translateY(0);
+}
+
+/* ===== NEWS CARD ===== */
+.news-card {
+  width: 90%;
+  background: #7fc2c544;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 3px #000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.news-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.news-headline {
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #000;
+  margin: 6px 0 4px 0;
+}
+
+.news-date {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  color: #e88f22;
+  margin-bottom: 4px;
+}
+
+.news-desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.4;
+  margin-top: 4px;
+}
+
+/* ===== PRESTASI CARD ===== */
+.prestasi-card {
+  width: 90%;
+  background: #7fc2c544;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 3px #000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prestasi-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.prestasi-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.prestasi-card h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #000;
+  margin: 6px 0 4px 0;
+}
+
+.prestasi-card p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.4;
+  margin-top: 4px;
+}
+
+/* ===== KEGIATAN CARD ===== */
+.kegiatan-card {
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  background: #7fc2c544;
+  box-shadow: 0 0 3px #000;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kegiatan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.kegiatan-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.kegiatan-card h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #000;
+  margin: 6px 0 4px 0;
+}
+
+.kegiatan-card p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.4;
+}
+
+/* ===== KEPALA MADRASAH ===== */
+.kepsek {
+  padding: 25px;
+  background: #eaeaea;
+  text-align: center;
+}
+
+.kepsek-img {
+  width: 130px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.kepsek h3 {
+  margin-bottom: 10px;
+}
+
+.kepsek p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  color: #000;
+  text-align: justify;
+  line-height: 1.4;
+  margin-top: 10px;
+}

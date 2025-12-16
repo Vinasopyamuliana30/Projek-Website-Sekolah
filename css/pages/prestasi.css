@@ -1,0 +1,213 @@
+/* ====================================
+   HALAMAN PRESTASI - PRESTASI.CSS
+   ==================================== */
+
+/* ===== PRESTASI SECTION ===== */
+.prestasi-section {
+  padding-top: 100px;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* ===== HERO HEADER ===== */
+.prestasi-hero-header {
+  margin-top: -30px;
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prestasi-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.prestasi-page-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.3;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.prestasi-hero-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+.prestasi-page-title .subtitle {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  display: block;
+  margin-top: 5px;
+}
+
+/* ===== TAGLINE WRAPPER ===== */
+.prestasi-tagline-wrapper {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+}
+
+.prestasi-tagline-btn {
+  background-color: #ffffff;
+  color: #000;
+  border: 1px solid #e5e7eb;
+  padding: 28px 10px;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  cursor: default;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08);
+  display: inline-flex;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* ===== CARDS WRAPPER ===== */
+.prestasi-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+  padding: 0 16px;
+}
+
+/* ===== PRESTASI CARD ===== */
+.prestasi-full-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.prestasi-full-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== MEDALI BADGE ===== */
+.medali-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 5;
+}
+
+.medal-img {
+  width: 45px;
+  height: 45px;
+  opacity: 0.95;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* ===== GAMBAR UTAMA ===== */
+.prestasi-image-wrapper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.prestasi-card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.prestasi-full-card:hover .prestasi-card-img {
+  transform: scale(1.05);
+}
+
+/* ===== KONTEN ===== */
+.prestasi-full-content {
+  padding: 18px;
+}
+
+.prestasi-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #047857;
+  margin-bottom: 6px;
+  font-family: "Poppins", sans-serif;
+}
+
+.prestasi-full-desc {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (min-width: 768px) {
+  .prestasi-hero-header {
+    height: 300px;
+  }
+
+  .prestasi-page-title {
+    font-size: 36px;
+  }
+
+  .prestasi-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 32px;
+  }
+
+  .medal-img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .prestasi-card-title {
+    font-size: 20px;
+  }
+
+  .prestasi-full-desc {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .prestasi-cards-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+}

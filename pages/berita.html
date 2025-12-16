@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Berita - MTs Negeri 2 Sumbawa</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/pages/berita.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <img src="../assets/logo.png" alt="logo" />
+      <div class="logotext">
+        <h4>MADRASAH TSANAWIYAH</h4>
+        <h3>NEGERI 2</h3>
+        <h5>SUMBAWA</h5>
+      </div>
+    </div>
+    <button id="hamburger" class="hamburger">☰</button>
+  </header>
+
+  <!-- DRAWER MENU -->
+  <nav id="drawermenu" class="drawer">
+    <a href="../index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="berita.html">Berita</a>
+    <a href="prestasi.html">Prestasi</a>
+    <a href="guru.html">Guru</a>
+    <a href="ppdb.html">PPDB</a>
+    <a href="kegiatan.html">Kegiatan Siswa</a>
+  </nav>
+
+  <!-- BERITA LIST SECTION -->
+  <section class="berita-list-section">
+    <div class="berita-hero-header" style="background-image: url('../assets/gedung.png')">
+      <div class="berita-hero-overlay">
+        <h2 class="berita-page-title">BERITA<br><span class="subtitle">MTsN 2 SUMBAWA</span></h2>
+      </div>
+      
+      <!-- Banner Berita Terbaru -->
+      <div class="berita-latest-banner-overlay">
+        <div class="berita-banner-header">
+          <h3>📰 Berita Terbaru</h3>
+          <span class="berita-realtime-clock"></span>
+        </div>
+        <div class="berita-marquee-container">
+          <div class="berita-marquee-text"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Tab Kategori -->
+    <div class="berita-tabs">
+      <button class="berita-tab active" data-kategori="semua">Semua</button>
+      <button class="berita-tab" data-kategori="prestasi">Prestasi</button>
+      <button class="berita-tab" data-kategori="kegiatan">Kegiatan</button>
+    </div>
+    
+    <!-- Container Cards -->
+    <div class="berita-cards-container"></div>
+    
+
+  <!-- FOOTER -->
+<footer class="footer" id="kontak">
+  <h3>Kontak</h3>
+  <p>📞 +62-857-579-9795</p>
+  <p>📞 +62-823-400-2017</p>
+  <p>📧 info@mtsnegeri2sumbawa.sch.id</p>
+
+  <h3>Sosial Media</h3>
+  <div class="sosmed">
+    <a href="https://www.facebook.com/profile.php?id=100089073197500" target="_blank">
+      <img src="../assets/fecbook.png" alt="Facebook" width="32" height="32">
+    </a>
+    <a href="https://www.instagram.com/mtsn2sumbawa?igsh=OWRrcXo4d2UyZHdr" target="_blank">
+      <img src="../assets/instagram.png" alt="Instagram" width="32" height="32">
+    </a>
+    <a href="https://youtube.com/@mtsn2sumbawa?si=h_3PBO0O-FVTzgFH" target="_blank">
+      <img src="../assets/youtobe.png" alt="YouTube" width="32" height="32">
+    </a>
+  </div>
+</footer>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15772.94441555492!2d117.98408319508698!3d-8.763843110595117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dca55f3118356c7%3A0x9900fb1fe49b0749!2sMTs%20Negeri%202%20Sumbawa!5e0!3m2!1sen!2id!4v1764721766556!5m2!1sen!2id"
+      width="100%"
+      height="200"
+      style="border: 0"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </footer>
+
+  <!-- COPYRIGHT -->
+  <footer class="footer-bottom">
+    <button class="footer-btn">
+      Copyright © MTS Negeri 2 Sumbawa | dikelola oleh Tim Humas
+    </button>
+  </footer>
+
+  <script src="../js/data/berita-data.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    // ===== REALTIME CLOCK =====
+    function updateRealtimeClock() {
+      const clockElement = document.querySelector(".berita-realtime-clock");
+      if (!clockElement) return;
+
+      const now = new Date();
+      const days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+      const months = [
+        "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+        "Juli", "Agustus", "September", "Oktober", "November", "Desember",
+      ];
+
+      const dayName = days[now.getDay()];
+      const date = now.getDate();
+      const monthName = months[now.getMonth()];
+      const year = now.getFullYear();
+      const hours = String(now.getHours()).padStart(2, "0");
+      const minutes = String(now.getMinutes()).padStart(2, "0");
+      const seconds = String(now.getSeconds()).padStart(2, "0");
+
+      clockElement.textContent = `${dayName}, ${date} ${monthName} ${year} | ${hours}:${minutes}:${seconds} WITA`;
+    }
+    
+    setInterval(updateRealtimeClock, 1000);
+    updateRealtimeClock();
+
+    // ===== MARQUEE BERITA TERBARU =====
+    function initBeritaMarquee() {
+      const marqueeText = document.querySelector(".berita-marquee-text");
+      if (!marqueeText) return;
+
+      const latestBerita = allBerita.slice(0, 3);
+      const marqueeContent = latestBerita
+        .map((berita) => `🔴 ${berita.judul}`)
+        .join("   •   ");
+
+      marqueeText.innerHTML = `<span>${marqueeContent}   •   ${marqueeContent}</span>`;
+    }
+    initBeritaMarquee();
+
+    // ===== RENDER BERITA CARDS =====
+    function renderBeritaCards(kategori = "semua") {
+      const container = document.querySelector(".berita-cards-container");
+      container.innerHTML = "";
+
+      const beritaList = getBeritaByKategori(kategori);
+
+      beritaList.forEach((berita) => {
+        const card = document.createElement("div");
+        card.className = "berita-list-card";
+        card.innerHTML = `
+          <img src="${berita.gambar}" alt="${berita.judul}">
+          <div class="berita-list-content">
+            <h3>${berita.judul}</h3>
+            <p class="berita-list-date">Ditulis tanggal ${berita.tanggal}</p>
+            <p class="berita-list-desc">${berita.ringkasan}</p>
+            <button class="btn-selengkapnya" data-id="${berita.id}">Selengkapnya...</button>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+
+      // Add click events to buttons
+      document.querySelectorAll(".btn-selengkapnya").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          const beritaId = e.target.getAttribute("data-id");
+          window.location.href = `berita-detail.html?id=${beritaId}`;
+        });
+      });
+    }
+
+    // ===== TAB CLICK EVENTS =====
+    document.querySelectorAll(".berita-tab").forEach((tab) => {
+      tab.addEventListener("click", (e) => {
+        document.querySelectorAll(".berita-tab").forEach((t) => t.classList.remove("active"));
+        e.target.classList.add("active");
+        const kategori = e.target.getAttribute("data-kategori");
+        renderBeritaCards(kategori);
+      });
+    });
+
+    // Initial render
+    renderBeritaCards("semua");
+  </script>
+</body>
+</html>
